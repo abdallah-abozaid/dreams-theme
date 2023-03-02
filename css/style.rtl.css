@@ -207,7 +207,9 @@ ol {
   z-index: 999999;
   background: #000;
 }
-
+a {
+  text-decoration: none;
+}
 .loader {
   width: 40px;
   height: 40px;
@@ -220,7 +222,6 @@ ol {
   animation: loader 0.8s linear infinite;
   -webkit-animation: loader 0.8s linear infinite;
 }
-
 @keyframes loader {
   0% {
     -webkit-transform: rotate(0deg);
@@ -380,6 +381,8 @@ ol {
 }
 .header__logo a {
   display: inline-block;
+  padding: 0.7rem 0.5rem;
+  max-width: 10rem;
 }
 
 .header__menu {
@@ -1148,6 +1151,7 @@ ol {
 
 .footer__logo a {
   display: inline-block;
+  max-width: 12rem;
 }
 
 .footer__copyright__text {

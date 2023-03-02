@@ -17,6 +17,7 @@
     />
 
     <!-- Css Styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
@@ -36,9 +37,6 @@
     <!-- Offcanvas Menu Begin -->
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
-      <div class="offcanvas__search">
-        <i class="fa fa-search search-switch"></i>
-      </div>
       <div class="offcanvas__logo">
         <a href="./index.html"><img src="img/logo.png" alt="" /></a>
       </div>
@@ -46,8 +44,8 @@
         <ul>
           <li><a href="./index.html">الرئيسية</a></li>
           <li><a href="./"> </a></li>
-          <li><a href="./pricing.html"> الدورات</a></li>
-          <li><a href="./instructors.html">المدربين</a></li>
+          <li><a href="./courses.html"> الدورات</a></li>
+          <li><a href="./team.html">المدربين</a></li>
           <li><a href="./faq.html">الأسئلة الشائعة</a></li>
         </ul>
       </nav>
@@ -78,8 +76,8 @@
               <ul>
                 <li><a href="./index.html">الرئيسية</a></li>
                 <li><a href="./">لوحة التحكم</a></li>
-                <li><a href="./pricing.html"> الدورات</a></li>
-                <li><a href="./instructors.html">المدربين</a></li>
+                <li><a href="./courses.html"> الدورات</a></li>
+                <li><a href="./team.html">المدربين</a></li>
                 <li><a href="./faq.html">الأسئلة الشائعة</a></li>
               </ul>
             </nav>
@@ -1227,7 +1225,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-2 col-sm-6">
+          <div class="col-lg-3 col-md-2 col-sm-6" data-aos="zoom-out-up">
             <div class="footer__widget">
               <h5>روابط مهمة</h5>
               <ul>
@@ -1238,17 +1236,17 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="zoom-out-up">
             <div class="footer__widget">
               <h5>الدورات</h5>
               <ul>
-                <li><a href="./pricing.html">دورة المستوى المبتدئ</a></li>
-                <li><a href="./pricing.html">المستوى المتوسط</a></li>
-                <li><a href="./pricing.html">المستوى المتقدم</a></li>
+                <li><a href="./courses.html">دورة المستوى المبتدئ</a></li>
+                <li><a href="./courses.html">المستوى المتوسط</a></li>
+                <li><a href="./courses.html">المستوى المتقدم</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="zoom-out-up">
             <div class="footer__widget">
               <h5>روابط مفيدة</h5>
               <ul>
@@ -1275,7 +1273,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-out-up">
             <div class="footer__about">
               <div class="footer__logo">
                 <a href="#"><img src="img/logo.png" alt="" /></a>
@@ -1348,5 +1346,9 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
