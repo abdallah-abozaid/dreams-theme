@@ -3082,7 +3082,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 75%;
+  width: 85%;
   margin: auto;
 }
 .state-site .cards > div {
@@ -3102,17 +3102,24 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.3s ease-out;
 }
-.state-site .cards > div .card p:first-of-type {
+.state-site .cards > div .card * {
+  transition: all 0.3s ease-out;
+}
+.state-site .cards > div .card:hover {
+  transform: scale(1.1);
+}
+.state-site .cards > div .card > div > p:first-of-type {
   font-size: 1rem;
 }
-.state-site .cards > div .card p:last-of-type {
+.state-site .cards > div .card > div > p:last-of-type {
   font-size: 3rem;
   font-weight: 600;
-  margin: 1rem 0;
+  margin: 1.5rem 0 1rem;
 }
-.state-site .cards > div .card span {
-  background-color: #0c2b4b3b;
+.state-site .cards > div .card > div > span {
+  background-color: #0c2b4bda;
   width: 5rem;
   height: 5rem;
   display: inline-block;
@@ -3124,4 +3131,173 @@ section {
 .state-site .cards > div .card span i {
   font-size: 2rem;
   color: #e9ad28;
+}
+.state-site .cards > div .card:hover > div > span {
+  background-color: #e9ad28;
+}
+.state-site .cards > div .card:hover span i {
+  color: #0c2b4b !important;
+}
+.state-site .cards > div .card:hover svg {
+  fill: #0c2b4b !important;
+}
+/* --------------------------------------------- */
+/* regester-page */
+.regester-page .container {
+  background: #fbfbfb;
+  border: 1px #0c2b4b1c solid;
+  border-radius: 14px;
+  padding: 60px 20px 20px 20px;
+}
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 60px;
+}
+.regester-page .content {
+  width: 90%;
+  margin: 5rem auto 3rem;
+}
+.regester-page .img-thumbnail {
+  border-radius: 0.7rem;
+  border: 2px dotted transparent;
+  box-shadow: 2px 5px 12px #0c2b4b34;
+}
+.regester-page .img-thumbnail.active {
+  border: 2px dotted #0c2b4b;
+}
+.regester-page .img-thumbnail:hover {
+  cursor: pointer;
+}
+.regester-page .content > div {
+  display: none;
+}
+.show {
+  display: block !important;
+}
+.regester-page .content form input {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  color: #444444;
+  font-size: 14px;
+  height: 50px;
+  margin-bottom: 30px;
+  padding-right: 20px;
+  width: 100%;
+}
+.regester-page .content form input {
+  background: transparent;
+  border: 1px solid rgb(239 85 135 / 20%);
+  color: #0c2b4b;
+}
+.regester-page .nice-select {
+  background: transparent;
+  border: 1px solid rgb(239 85 135 / 20%);
+  color: #0c2b4b;
+  font-size: 14px;
+  height: 50px;
+  margin-bottom: 30px;
+  padding-right: 20px;
+  width: 100% !important;
+}
+.regester-page .nice-select:after {
+  right: unset;
+  left: 1rem;
+}
+.progress-container::before {
+  content: "";
+  background-color: #0c2b4b;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 100%;
+  z-index: 1;
+}
+
+.progress {
+  background-color: #e9ad28;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 0%;
+  z-index: 3;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background: #fff;
+  color: #0c2b4b;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #0c2b4b;
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: #e9ad28;
+  background-color: #fff;
+  color: #e9ad28;
+  scale: 1.1;
+}
+
+.circle .icon {
+  position: absolute;
+  font-size: 20px;
+}
+
+.circle .caption {
+  position: absolute;
+  font-size: 14px;
+  font-weight: bolder;
+  bottom: -30px;
+  width: 6rem;
+  text-align: center;
+}
+.btns {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.btn {
+  background: #e9ad28;
+  color: #000;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: #fff;
+  border: 2px solid #0c2b4b6e;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 85%;
+  }
 }
