@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Dreams Template" />
+    <meta name="keywords" content="Dreams, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Drive out</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.rtl.css" type="text/css" />
+    <link rel="stylesheet" href="css/regester.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+      <div class="offcanvas__logo">
+        <a href="./index.html"><img src="img/logo.png" alt="" /></a>
+      </div>
+      <nav class="offcanvas__menu mobile-menu">
+        <ul>
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="./"> </a></li>
+          <li><a href="./courses.html"> الدورات</a></li>
+          <li><a href="./blog.html">المدربين</a></li>
+          <li><a href="./faq.html">الأسئلة الشائعة</a></li>
+        </ul>
+      </nav>
+      <div id="mobile-menu-wrap"></div>
+      <div class="offcanvas__social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+      </div>
+      <div class="offcanvas__btn">
+        <a href="#" class="primary-btn"> تسجيل الخروج</a>
+      </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <a href="./index.html"><img src="img/logo.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <nav class="header__menu">
+              <ul>
+                <li><a href="./index.html">الرئيسية</a></li>
+                <li><a href="./">لوحة التحكم</a></li>
+                <li><a href="./courses.html"> الدورات</a></li>
+                <li>
+                  <a href="./team.html">المدربين</a>
+                </li>
+                <li><a href="./faq.html">الأسئلة الشائعة</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-4">
+            <div class="header__right">
+              <div class="header__right__btn">
+                <a href="#" class="primary-btn">تسجيل دخول</a>
+                <a href="/userType.html" class="primary-btn">حساب جديد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="canvas__open">
+          <span class="fa fa-bars"></span>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb__links">
+              <a href="./index.html"><i class="fa fa-home"></i> الرئيسية</a>
+              <span> التسجيل ك متدرب/ة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Team Section Begin -->
+
+    <section class="regester-page courses--page spad">
+      <div class="container content">
+        <div class="application__form__content">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title center-title">
+                <span
+                  >سجل/ي معنا لاختيار المدرب/ة المناسب/ة وتابع/ي معه/ا دروسك من
+                  خلال حسابك/ي</span
+                >
+                <h2>الاشتراك كـ &#x645;&#x62A;&#x62F;&#x631;&#x628;/&#x629;</h2>
+              </div>
+            </div>
+          </div>
+          <form
+            id="external-account"
+            method="post"
+            class="form-horizontal"
+            action="/Account/ExternalLogin?returnUrl=%2F"
+          >
+            <input type="hidden" name="userType" value="trainee" />
+            <div class="row mb-3">
+              <div class="col-md-6 col-xs-12 p-1">
+                <button
+                  type="submit"
+                  class="btn btn-block provider_google"
+                  name="provider"
+                  value="Google"
+                  title="التسجيل باستخدام Google"
+                >
+                  <span class="fa fa-google"></span> التسجيل باستخدام جوجل
+                </button>
+              </div>
+              <div class="col-md-6 col-xs-12 p-1">
+                <button
+                  type="submit"
+                  class="btn btn-block provider_twitter"
+                  name="provider"
+                  value="Twitter"
+                  title="التسجيل باستخدام Twitter"
+                >
+                  <span class="fa fa-twitter"></span> التسجيل باستخدام تويتر
+                </button>
+              </div>
+            </div>
+            <input
+              name="__RequestVerificationToken"
+              type="hidden"
+              value="CfDJ8GM5XNSLYWJBmlZ_ScNp6k9hcGpVzZm0ESNOIRgGIDIMQk4Kx6_dMnI3gnHN59tzfrQsB9u8xY5a-mjwVo-JP91goIZr7ezDRShsnQKWlW0j-Cd1X7xZ-bz1WnA-PwgBneN-LdQklC1F8_6yiuxKmX0"
+            />
+          </form>
+          <form action="/Register/trainee" method="post">
+            <input
+              type="hidden"
+              id="lngForm"
+              placeholder="Longitude"
+              data-val="true"
+              data-val-length="The field Longitude must be a string with a maximum length of 100."
+              data-val-length-max="100"
+              data-val-required="&#x627;&#x644;&#x631;&#x62C;&#x627;&#x621; &#x62A;&#x62D;&#x62F;&#x64A;&#x62F; &#x639;&#x646;&#x648;&#x627;&#x646;&#x643; &#x639;&#x644;&#x649; &#x627;&#x644;&#x62E;&#x631;&#x64A;&#x637;&#x629; &#x628;&#x634;&#x643;&#x644; &#x623;&#x62F;&#x642;"
+              name="Longitude"
+              value=""
+            />
+            <input
+              type="hidden"
+              id="latForm"
+              placeholder="Latitude"
+              data-val="true"
+              data-val-length="The field Latitude must be a string with a maximum length of 100."
+              data-val-length-max="100"
+              data-val-required="&#x627;&#x644;&#x631;&#x62C;&#x627;&#x621; &#x62A;&#x62D;&#x62F;&#x64A;&#x62F; &#x639;&#x646;&#x648;&#x627;&#x646;&#x643; &#x639;&#x644;&#x649; &#x627;&#x644;&#x62E;&#x631;&#x64A;&#x637;&#x629; &#x628;&#x634;&#x643;&#x644; &#x623;&#x62F;&#x642;"
+              name="Latitude"
+              value=""
+            />
+            <div class="form-group"></div>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <span
+                  class="text-danger field-validation-valid"
+                  data-valmsg-for="FullName"
+                  data-valmsg-replace="true"
+                ></span>
+                <input
+                  placeholder="الاسم بالكامل"
+                  type="text"
+                  data-val="true"
+                  data-val-length="&#x627;&#x644;&#x631;&#x62C;&#x627;&#x621; &#x627;&#x62F;&#x62E;&#x627;&#x644; &#x627;&#x644;&#x627;&#x633;&#x645; &#x62B;&#x644;&#x627;&#x62B;&#x64A; &#x648;&#x643;&#x627;&#x645;&#x644;"
+                  data-val-length-max="300"
+                  data-val-length-min="6"
+                  data-val-required="&#x62D;&#x642;&#x644; &#x627;&#x644;&#x627;&#x633;&#x645; &#x645;&#x637;&#x644;&#x648;&#x628;"
+                  id="FullName"
+                  maxlength="300"
+                  name="FullName"
+                  value=""
+                />
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <span
+                  class="text-danger field-validation-valid"
+                  data-valmsg-for="PhoneNumber"
+                  data-valmsg-replace="true"
+                ></span>
+                <input
+                  placeholder="رقم الهاتف"
+                  type="tel"
+                  data-val="true"
+                  data-val-maxlength="&#x627;&#x644;&#x631;&#x62C;&#x627;&#x621; &#x643;&#x62A;&#x627;&#x628;&#x629; &#x631;&#x642;&#x645; &#x647;&#x627;&#x62A;&#x641; &#x635;&#x62D;&#x64A;&#x62D;"
+                  data-val-maxlength-max="15"
+                  data-val-minlength="&#x627;&#x644;&#x631;&#x62C;&#x627;&#x621; &#x643;&#x62A;&#x627;&#x628;&#x629; &#x631;&#x642;&#x645; &#x647;&#x627;&#x62A;&#x641; &#x635;&#x62D;&#x64A;&#x62D;"
+                  data-val-minlength-min="10"
+                  data-val-phone="&#x627;&#x644;&#x631;&#x62C;&#x627;&#x621; &#x643;&#x62A;&#x627;&#x628;&#x629; &#x631;&#x642;&#x645; &#x647;&#x627;&#x62A;&#x641; &#x635;&#x62D;&#x64A;&#x62D;"
+                  data-val-required="&#x631;&#x642;&#x645; &#x627;&#x644;&#x647;&#x627;&#x62A;&#x641; &#x645;&#x637;&#x644;&#x648;&#x628;"
+                  id="PhoneNumber"
+                  maxlength="15"
+                  name="PhoneNumber"
+                  value=""
+                />
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <span
+                  class="text-danger field-validation-valid"
+                  data-valmsg-for="Email"
+                  data-valmsg-replace="true"
+                ></span>
+                <input
+                  placeholder="البريد الالكتروني"
+                  type="email"
+                  data-val="true"
+                  data-val-email="&#x62A;&#x62D;&#x642;&#x642; &#x645;&#x646; &#x628;&#x631;&#x64A;&#x62F;&#x643; &#x627;&#x644;&#x627;&#x644;&#x643;&#x62A;&#x631;&#x648;&#x646;&#x64A;"
+                  data-val-required="&#x627;&#x644;&#x628;&#x631;&#x64A;&#x62F; &#x627;&#x644;&#x627;&#x644;&#x643;&#x62A;&#x631;&#x648;&#x646;&#x64A; &#x645;&#x637;&#x644;&#x648;&#x628;"
+                  id="Email"
+                  name="Email"
+                  value=""
+                />
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <span
+                  class="text-danger field-validation-valid"
+                  data-valmsg-for="IdentityNumber"
+                  data-valmsg-replace="true"
+                ></span>
+                <input
+                  placeholder="رقم السجل المدني او الاقامة"
+                  type="text"
+                  data-val="true"
+                  data-val-maxlength="&#x627;&#x644;&#x631;&#x62C;&#x627;&#x621; &#x627;&#x636;&#x627;&#x641;&#x629; &#x627;&#x644;&#x631;&#x642;&#x645; &#x628;&#x634;&#x643;&#x644; &#x635;&#x62D;&#x64A;&#x62D;"
+                  data-val-maxlength-max="10"
+                  data-val-minlength="&#x627;&#x644;&#x631;&#x62C;&#x627;&#x621; &#x627;&#x636;&#x627;&#x641;&#x629; &#x627;&#x644;&#x631;&#x642;&#x645; &#x628;&#x634;&#x643;&#x644; &#x635;&#x62D;&#x64A;&#x62D;"
+                  data-val-minlength-min="10"
+                  data-val-regex="&#x627;&#x644;&#x631;&#x62C;&#x627;&#x621; &#x627;&#x636;&#x627;&#x641;&#x629; &#x627;&#x644;&#x631;&#x642;&#x645; &#x628;&#x634;&#x643;&#x644; &#x635;&#x62D;&#x64A;&#x62D;"
+                  data-val-regex-pattern="^[0-9]*$"
+                  data-val-required="&#x631;&#x642;&#x645; &#x627;&#x644;&#x633;&#x62C;&#x644; &#x627;&#x644;&#x645;&#x62F;&#x646;&#x64A; &#x627;&#x648; &#x627;&#x644;&#x627;&#x642;&#x627;&#x645;&#x629; &#x645;&#x637;&#x644;&#x648;&#x628;"
+                  id="IdentityNumber"
+                  maxlength="10"
+                  name="IdentityNumber"
+                  value=""
+                />
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <select id="provincesSelectLIist">
+                  <option value="">الرجاء اختيار المقاطعة</option>
+                  <option value="1">
+                    &#x627;&#x644;&#x62D;&#x62F;&#x648;&#x62F;
+                    &#x627;&#x644;&#x634;&#x645;&#x627;&#x644;&#x64A;&#x629;
+                  </option>
+                  <option value="2">&#x627;&#x644;&#x62C;&#x648;&#x641;</option>
+                  <option value="3">&#x62A;&#x628;&#x648;&#x643;</option>
+                  <option value="4">&#x62D;&#x627;&#x626;&#x644;</option>
+                  <option value="5">
+                    &#x627;&#x644;&#x642;&#x635;&#x64A;&#x645;
+                  </option>
+                  <option value="6">
+                    &#x627;&#x644;&#x631;&#x64A;&#x627;&#x636;
+                  </option>
+                  <option value="7">
+                    &#x627;&#x644;&#x645;&#x62F;&#x64A;&#x646;&#x629;
+                    &#x627;&#x644;&#x645;&#x646;&#x648;&#x631;&#x629;
+                  </option>
+                  <option value="8">&#x639;&#x633;&#x64A;&#x631;</option>
+                  <option value="9">
+                    &#x627;&#x644;&#x628;&#x627;&#x62D;&#x629;
+                  </option>
+                  <option value="10">
+                    &#x62C;&#x627;&#x632;&#x627;&#x646;
+                  </option>
+                  <option value="11">
+                    &#x645;&#x643;&#x629;
+                    &#x627;&#x644;&#x645;&#x643;&#x631;&#x645;&#x629;
+                  </option>
+                  <option value="12">
+                    &#x646;&#x62C;&#x631;&#x627;&#x646;
+                  </option>
+                  <option value="13">
+                    &#x627;&#x644;&#x634;&#x631;&#x642;&#x64A;&#x629;
+                  </option>
+                </select>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <select id="citiesSelectLIist" disabled>
+                  <option value="">الرجاء اختيار المدينة</option>
+                </select>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <span
+                  class="text-danger field-validation-valid"
+                  data-valmsg-for="NeighborhoodId"
+                  data-valmsg-replace="true"
+                ></span>
+                <select
+                  id="neighborhoodtsSelectLIist"
+                  disabled
+                  data-val="true"
+                  data-val-range="&#x627;&#x644;&#x631;&#x62C;&#x627;&#x621; &#x627;&#x62E;&#x62A;&#x64A;&#x627;&#x631; &#x627;&#x644;&#x645;&#x646;&#x637;&#x642;&#x629;"
+                  data-val-range-max="10000"
+                  data-val-range-min="1"
+                  data-val-required="&#x627;&#x644;&#x631;&#x62C;&#x627;&#x621; &#x627;&#x62E;&#x62A;&#x64A;&#x627;&#x631; &#x627;&#x644;&#x645;&#x646;&#x637;&#x642;&#x629;"
+                  name="NeighborhoodId"
+                >
+                  <option value="">الرجاء اختيار المنطقة</option>
+                </select>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <span
+                  class="text-danger field-validation-valid"
+                  data-valmsg-for="Gender"
+                  data-valmsg-replace="true"
+                ></span>
+                <select
+                  data-val="true"
+                  data-val-required="&#x646;&#x648;&#x639; &#x627;&#x644;&#x62C;&#x646;&#x633; &#x645;&#x637;&#x644;&#x648;&#x628;"
+                  id="Gender"
+                  name="Gender"
+                >
+                  <option value="">نوع الجنس</option>
+                  <option value="Male">&#x630;&#x643;&#x631;</option>
+                  <option value="Female">&#x623;&#x646;&#x62B;&#x649;</option>
+                </select>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="form-groub row">
+                  <label class="col-md-3">تاريخ الميلاد</label>
+                  <div class="col-md-9">
+                    <span
+                      class="text-danger field-validation-valid"
+                      data-valmsg-for="DateOfBirth"
+                      data-valmsg-replace="true"
+                    ></span>
+                    <input
+                      style="text-align: right"
+                      type="date"
+                      data-val="true"
+                      data-val-required="&#x62A;&#x627;&#x631;&#x64A;&#x62E; &#x627;&#x644;&#x645;&#x64A;&#x644;&#x627;&#x62F; &#x645;&#x637;&#x644;&#x648;&#x628;"
+                      id="DateOfBirth"
+                      name="DateOfBirth"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <span
+                  class="text-danger field-validation-valid"
+                  data-valmsg-for="Password"
+                  data-valmsg-replace="true"
+                ></span>
+                <input
+                  placeholder="كلمة المرور"
+                  type="password"
+                  data-val="true"
+                  data-val-length="&#x627;&#x644;&#x631;&#x62C;&#x627;&#x621; &#x627;&#x62F;&#x62E;&#x627;&#x644; &#x643;&#x644;&#x645;&#x629; &#x645;&#x631;&#x648;&#x631; &#x644;&#x627; &#x62A;&#x642;&#x644; &#x639;&#x646; 6 &#x62E;&#x627;&#x646;&#x627;&#x62A; &#x648;&#x64A;&#x641;&#x636;&#x644; &#x627;&#x636;&#x627;&#x641;&#x629; &#x627;&#x644;&#x627;&#x631;&#x642;&#x627;&#x645; &#x648;&#x627;&#x644;&#x631;&#x645;&#x648;&#x632; &#x644;&#x647;&#x627;"
+                  data-val-length-max="100"
+                  data-val-length-min="6"
+                  data-val-required="&#x643;&#x644;&#x645;&#x629; &#x627;&#x644;&#x645;&#x631;&#x648;&#x631; &#x645;&#x637;&#x644;&#x648;&#x628;&#x629;"
+                  id="Password"
+                  maxlength="100"
+                  name="Password"
+                />
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <span
+                  class="text-danger field-validation-valid"
+                  data-valmsg-for="ConfirmPassword"
+                  data-valmsg-replace="true"
+                ></span>
+                <input
+                  placeholder="تأكيد كلمة المرور"
+                  type="password"
+                  data-val="true"
+                  data-val-equalto="&#x62A;&#x623;&#x643;&#x64A;&#x62F; &#x643;&#x644;&#x645;&#x629; &#x627;&#x644;&#x645;&#x631;&#x648;&#x631; &#x63A;&#x64A;&#x631; &#x645;&#x62A;&#x648;&#x627;&#x641;&#x642; &#x645;&#x639; &#x643;&#x644;&#x645;&#x629; &#x627;&#x644;&#x645;&#x631;&#x648;&#x631;"
+                  data-val-equalto-other="*.Password"
+                  id="ConfirmPassword"
+                  name="ConfirmPassword"
+                />
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <select id="InvitationtSiteList" name="InvitationtSite">
+                  <option value="" style="color: #efefef">
+                    من أين تعرفت/ي علينا
+                  </option>
+                  <option
+                    value="&#x627;&#x639;&#x644;&#x627;&#x646; &#x62A;&#x648;&#x64A;&#x62A;&#x631;"
+                  >
+                    اعلان تويتر
+                  </option>
+                  <option
+                    value="&#x627;&#x639;&#x644;&#x627;&#x646; &#x633;&#x646;&#x627;&#x628; &#x634;&#x627;&#x62A;"
+                  >
+                    اعلان سناب شات
+                  </option>
+                  <option
+                    value="&#x627;&#x639;&#x644;&#x627;&#x646; &#x627;&#x646;&#x633;&#x62A;&#x642;&#x631;&#x627;&#x645;"
+                  >
+                    اعلان انستقرام
+                  </option>
+                  <option
+                    value="&#x627;&#x639;&#x644;&#x627;&#x646; &#x641;&#x64A;&#x633;&#x628;&#x648;&#x643;"
+                  >
+                    اعلان فيسبوك
+                  </option>
+                  <option value="frind">من خلال صديق</option>
+                  <option value="another">غير ذلك</option>
+                </select>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-6">
+                <div style="display: none" id="InvitationtSiteDivInput">
+                  <span
+                    class="text-danger field-validation-valid"
+                    data-valmsg-for="InvitationtAnother"
+                    data-valmsg-replace="true"
+                  ></span>
+                  <input
+                    id="InvitationtSiteInput"
+                    type="text"
+                    name="InvitationtAnother"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <span
+                  class="text-danger field-validation-valid"
+                  data-valmsg-for="InvitationCode"
+                  data-valmsg-replace="true"
+                ></span>
+                <input
+                  placeholder="هل لديك/ي كود دعوة، ادخله هنا اذا كان متوفراً رجاءً"
+                  type="text"
+                  data-val="true"
+                  data-val-length="The field InvitationCode must be a string with a minimum length of 4 and a maximum length of 20."
+                  data-val-length-max="20"
+                  data-val-length-min="4"
+                  id="InvitationCode"
+                  maxlength="20"
+                  name="InvitationCode"
+                  value=""
+                />
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <span class="lableFormColor"
+                  >الرجاء تحديد عنوانك الحالي على الخريطة لجلب المدربين الاقرب
+                  والانسب لكي</span
+                ><br />
+                <span class="lableFormColor"
+                  >*بامكانك سحب علامة الخريطة لعنوانك</span
+                ><br />
+                <span class="lableFormColor"
+                  >*بامكانك تعديل عنوانك على الخريطة من خلال لوحة التحكم
+                  لاحقاً</span
+                ><br />
+                <span
+                  class="text-danger field-validation-valid"
+                  data-valmsg-for="Longitude"
+                  data-valmsg-replace="true"
+                ></span>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="registerMap" id="registerMap"></div>
+              </div>
+
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <h5>
+                  بتسجيلك/ي معنا فأنت موافع على
+                  <a
+                    target="_blank"
+                    class="linkColorHover"
+                    href="/PrivacyPolicy"
+                    >سياسة الخصوصية</a
+                  >
+                  و
+                  <a target="_blank" class="linkColorHover" href="/TermsOfUse"
+                    >سياسة الاستخدام</a
+                  >
+                </h5>
+                <br />
+              </div>
+              <div class="col-lg-12 text-center">
+                <button
+                  type="submit"
+                  class="btn btn-block primary-btn second-bg pointer"
+                >
+                  تسجيل
+                </button>
+              </div>
+            </div>
+            <input
+              name="__RequestVerificationToken"
+              type="hidden"
+              value="CfDJ8GM5XNSLYWJBmlZ_ScNp6k9hcGpVzZm0ESNOIRgGIDIMQk4Kx6_dMnI3gnHN59tzfrQsB9u8xY5a-mjwVo-JP91goIZr7ezDRShsnQKWlW0j-Cd1X7xZ-bz1WnA-PwgBneN-LdQklC1F8_6yiuxKmX0"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-2 col-sm-6" data-aos="zoom-out-up">
+            <div class="footer__widget">
+              <h5>روابط مهمة</h5>
+              <ul>
+                <li><a href="./about.html">معلومات عنا</a></li>
+                <li><a href="./PolicyPrivcy.html">سياسة الخصوصية</a></li>
+                <li><a href="./UsePolicy.html">سياسة الاستخدام</a></li>
+                <li><a href="./faq.html">الاسئلة الشائعة</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="zoom-out-up">
+            <div class="footer__widget">
+              <h5>الدورات</h5>
+              <ul>
+                <li><a href="./courses.html">دورة المستوى المبتدئ</a></li>
+                <li><a href="./courses.html">المستوى المتوسط</a></li>
+                <li><a href="./courses.html">المستوى المتقدم</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="zoom-out-up">
+            <div class="footer__widget">
+              <h5>روابط مفيدة</h5>
+              <ul>
+                <li><a href="./index.html">الرئيسية</a></li>
+                <li><a href="./contact.html">تواصل معنا</a></li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-twitter fa-lg"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-instagram fa-lg"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-whatsapp fa-lg"></i>
+                  </a>
+                  <a href="#">
+                    <img
+                      style="height: 20px; width: 50.15px"
+                      src="./img/Maroof.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-out-up">
+            <div class="footer__about">
+              <div class="footer__logo">
+                <a href="#"><img src="img/logo.png" alt="" /></a>
+              </div>
+              <p>العنوان: المملكة العربية السعودية</p>
+              <ul>
+                <li>رقم الهاتف: 0559870673</li>
+                <li>البريد الالكتروني: contact@idriveout.com</li>
+                <li style="color: #dedede; font-size: 10px">
+                  برمجة
+                  <a
+                    target="_blank"
+                    href="https://seirah.com/yasinsh"
+                    style="color: #fff"
+                  >
+                    <u>ياسين شهوان</u>
+                  </a>
+                  هاتف
+                  <a
+                    style="color: #fff"
+                    title="واتس اب"
+                    href="https://wa.me/970595079412"
+                    target="_blank"
+                  >
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    <u>00970595079412</u>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="footer__copyright__text">
+              <p>
+                حقوق النشر &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                محفوظة لموقع <i class="fa fa-heart" aria-hidden="true"></i>
+                <a href="/">درايف اوت</a>
+              </p>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+      <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+          <input type="text" id="search-input" placeholder="Search here....." />
+        </form>
+      </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/location.js"></script>
+    <script>
+      $("#InvitationtSiteList").change(function () {
+        const $this = $(this);
+        const selectedValue = $this.val();
+        if (selectedValue == "frind") {
+          $("#InvitationtSiteDivInput").show();
+          $("#InvitationtSiteInput").attr("placeholder", "اسم الصديق");
+        } else if (selectedValue == "another") {
+          $("#InvitationtSiteDivInput").show();
+          $("#InvitationtSiteInput").attr(
+            "placeholder",
+            "رجاءً اعلمنا هنا بالمكان الذي تعرفت/ي علينا من خلاله سيساعدنا هذا في تحسين اداء الموقع"
+          );
+        } else {
+          $("#InvitationtSiteDivInput").hide();
+        }
+      });
+    </script>
+    <script src="js/location_googleMap_register.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
