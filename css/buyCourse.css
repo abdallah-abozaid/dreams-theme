@@ -284,3 +284,16 @@ button.toast-close-button {
 .buy-method .method-forms > div.active {
   display: block;
 }
+@media (max-width: 992px) {
+  .buy-method .btns {
+    flex-wrap: wrap;
+  }
+  .buy-method .btns button {
+    width: 45%;
+  }
+}
+@media (max-width: 576px) {
+  .buy-method .btns button {
+    width: 90%;
+  }
+}
