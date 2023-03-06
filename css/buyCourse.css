@@ -1,0 +1,286 @@
+.dark {
+  --primary: hsl(1, 100%, 68%);
+  --other: hsl(0, 0%, 90%);
+  background: hsl(0, 0%, 10%);
+}
+
+/* h1 */
+
+/* label */
+
+/* input */
+
+.text {
+  color: var(--other);
+  font-weight: bold;
+}
+
+/* checked state */
+
+input:checked + .design::before {
+  opacity: 1;
+  transform: scale(0.6);
+}
+
+/* other states */
+
+input:hover + .design,
+input:focus + .design {
+  border: 1px solid var(--primary);
+}
+
+input:hover + .design:before,
+input:focus + .design:before {
+  background: var(--primary);
+}
+
+input:hover ~ .text {
+  color: var(--primary);
+}
+
+input:focus + .design::after,
+input:active + .design::after {
+  opacity: 0.1;
+  transform: scale(2.6);
+}
+
+.abs-site-link {
+  background: hsla(0, 0%, 98%, 0.6);
+  bottom: 20px;
+  color: hsla(0, 0%, 0%, 0.6);
+  font-size: 16px;
+  left: 20px;
+  position: fixed;
+}
+.site-text-color {
+  color: #0c2b4b;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer :hover {
+  cursor: pointer;
+}
+
+#loading,
+.loading {
+  display: none;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.select2-selection--multiple {
+  padding: 5px;
+}
+
+.social-media li a:hover.sn {
+  background-color: #fffb00c4;
+}
+
+.social-media li a:hover.ins {
+  background-color: #ed1fe2;
+}
+
+.headerBackgroundColor {
+  background-color: whitesmoke;
+}
+
+.hidden {
+  display: none /*!important*/;
+}
+
+.support-newline-textarea {
+  white-space: pre-wrap;
+}
+
+.site-btn {
+  cursor: pointer;
+}
+
+.homeTextarea {
+  background: transparent;
+  border: 1px solid rgb(239 85 135 / 20%);
+  color: #0c2b4b;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.homeTextarea::-webkit-input-placeholder {
+  color: #989898;
+}
+
+.homeTextarea::-moz-placeholder {
+  color: #989898;
+}
+
+.homeTextarea:-ms-input-placeholder {
+  color: #989898;
+}
+
+.homeTextarea::-ms-input-placeholder {
+  color: #989898;
+}
+
+.homeTextarea::placeholder {
+  color: #989898;
+}
+
+.linkColorHover:hover {
+  color: rgba(234, 52, 2, 0.77);
+}
+
+.myBtn {
+  background-color: #0c2b4b !important;
+  border: none;
+  color: #fff !important;
+}
+
+.myBtn:hover {
+  background-color: #e9ad28 !important;
+  border: none;
+  color: #0c2b4b !important;
+}
+
+.myBtn:active {
+  border: none;
+}
+
+.ContentTextArea {
+  white-space: pre-wrap;
+}
+
+.modal-header .close {
+  margin: 0px;
+  padding: 0px;
+}
+
+.spad {
+  padding-top: 50px;
+}
+
+.primary-color {
+  color: #0c2b4b;
+}
+
+.contentPage {
+  background-color: #fbfbfb;
+  border-radius: 20px;
+  box-shadow: #0c2b4b2e 2px 2px 10px 7px;
+  padding: 30px;
+}
+
+.select2-container {
+  width: 100% !important;
+}
+
+button.toast-close-button {
+  float: left !important;
+}
+
+#toast-container > .toast-info,
+#toast-container > .toast-success,
+#toast-container > .toast-warning,
+#toast-container > .toast-error {
+  background-image: none !important;
+}
+
+.toast-info {
+  background-color: #d20038;
+}
+
+#toast-container > div {
+  padding: 10px 5px 10px 10px;
+}
+
+.provider_google {
+  background-color: #dd4b39;
+  color: #fff;
+}
+
+.provider_google:hover {
+  box-shadow: 1px 1px 9px 4px #dd4b39;
+  color: #fff;
+}
+
+.provider_facebook {
+  background-color: #4267b2;
+  color: #fff;
+}
+
+.provider_facebook:hover {
+  box-shadow: 1px 1px 9px 4px #4267b2;
+  color: #fff;
+}
+
+.provider_twitter {
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+.provider_twitter:hover {
+  box-shadow: 1px 1px 9px 4px #1da1f2;
+  color: #fff;
+}
+
+.typeDiv:hover {
+  border: #0c2b4b 2px dashed;
+}
+
+.messagesInSideMenueCount {
+  background-color: red;
+  border-radius: 20px;
+  font-size: 10px;
+  padding: 0px 5px;
+}
+
+.notificationsInSideMenueCount {
+  background-color: green;
+  border-radius: 20px;
+  font-size: 10px;
+  padding: 0px 5px;
+}
+
+.registerMap {
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.registerMap iframe {
+  width: 100%;
+}
+
+.textShadow {
+  text-shadow: -2px 3px 4px #090909;
+}
+.buy-method .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.buy-method .btns button {
+  min-width: 10rem;
+  height: 6rem;
+  margin: 0.6rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+.buy-method .btns button:hover,
+.buy-method .btns button.active {
+  border: 2px dotted #0c2b4b;
+}
+.buy-method .btns button img {
+  width: 6rem;
+}
+.buy-method .method-forms > div {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  display: none;
+}
+.buy-method .method-forms > div.active {
+  display: block;
+}

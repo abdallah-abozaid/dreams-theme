@@ -3216,10 +3216,14 @@ section {
   cursor: pointer;
 }
 
-.application__form__content {
+.steps .Step {
   width: 90%;
   margin: 5rem auto;
   display: none;
+}
+.Step {
+  width: 90%;
+  margin: 5rem auto;
 }
 .show {
   display: block !important;
@@ -3368,4 +3372,38 @@ section {
   .header .container {
     padding: 0;
   }
+}
+/* ----------------------------------------------------------------- */
+/* ----------------------------------------------------------------- */
+/* ----------------------------------------------------------------- */
+.search-trainer {
+  background: #fff;
+  border: 1px #0c2b4b1c solid;
+  border-radius: 14px;
+  padding: 20px;
+}
+.buy-course-page form input,
+.modal form input {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  color: #444444;
+  font-size: 14px;
+  height: 50px;
+  margin-bottom: 30px;
+  padding-right: 20px;
+  width: 100%;
+}
+.buy-course-page select,
+.modal select {
+  background: transparent;
+  border: 1px solid rgb(239 85 135 / 20%);
+  color: #0c2b4b;
+  font-size: 14px;
+  height: 50px;
+  margin-bottom: 30px;
+  padding-right: 20px;
+  width: 100%;
+}
+.buy-course-page button {
+  border-radius: 0.3rem;
 }

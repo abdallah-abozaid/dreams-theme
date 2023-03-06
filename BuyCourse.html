@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Dreams Template" />
+    <meta name="keywords" content="Dreams, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Drive out</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.rtl.css" type="text/css" />
+    <link rel="stylesheet" href="css/buyCourse.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker-build.css" />
+  </head>
+
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+      <div class="offcanvas__logo">
+        <a href="./index.html"><img src="img/logo.png" alt="" /></a>
+      </div>
+      <nav class="offcanvas__menu mobile-menu">
+        <ul>
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="./"> </a></li>
+          <li><a href="./courses.html"> الدورات</a></li>
+          <li><a href="./blog.html">المدربين</a></li>
+          <li><a href="./faq.html">الأسئلة الشائعة</a></li>
+        </ul>
+      </nav>
+      <div id="mobile-menu-wrap"></div>
+      <div class="offcanvas__social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+      </div>
+      <div class="offcanvas__btn">
+        <a href="#" class="primary-btn"> تسجيل الخروج</a>
+      </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <a href="./index.html"><img src="img/logo.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <nav class="header__menu">
+              <ul>
+                <li><a href="./index.html">الرئيسية</a></li>
+                <li><a href="./">لوحة التحكم</a></li>
+                <li><a href="./courses.html"> الدورات</a></li>
+                <li>
+                  <a href="./team.html">المدربين</a>
+                </li>
+                <li><a href="./faq.html">الأسئلة الشائعة</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-4">
+            <div class="header__right">
+              <div class="header__right__btn">
+                <a href="#" class="primary-btn">تسجيل دخول</a>
+                <a href="/userType.html" class="primary-btn">حساب جديد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="canvas__open">
+          <span class="fa fa-bars"></span>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb__links">
+              <a href="./index.html"><i class="fa fa-home"></i> الرئيسية</a>
+              <span> شراء الكورس</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Team Section Begin -->
+
+    <section class="regester-page buy-course-page spad">
+      <div class="container">
+        <div class="progress-container">
+          <div class="progress" id="progress"></div>
+          <div class="circle active">
+            <span class="icon">1</span>
+
+            <div class="caption">اختيار المدرب</div>
+          </div>
+          <div class="circle">
+            <span class="icon">2</span>
+
+            <div class="caption">وسيلة الدفع</div>
+          </div>
+          <div class="circle">
+            <span class="icon">3</span>
+
+            <div class="caption">تاكيد الدفع</div>
+          </div>
+        </div>
+        <div class="content steps">
+          <!-- ------------- step 1------------------------ -->
+          <!-- select trainer -->
+          <div class="Step regester show">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-title center-title">
+                  <span>فريقنا الرائع</span>
+                  <h2>الرجاء اختيار المدربين الأنسب لك</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-3 pb-3 mb-5">
+              <div class="col-sm-3">
+                <h5>الرجاء اختيار مدة الدرس الواحد</h5>
+              </div>
+              <div class="col-sm-9">
+                <label class="mx-3">
+                  <input
+                    onclick="setHours(1)"
+                    value="1"
+                    type="radio"
+                    name="Period"
+                    checked
+                  />
+                  <span class="text">ساعة واحدة </span>
+                </label>
+                <label>
+                  <input
+                    onclick="setHours(2)"
+                    value="2"
+                    type="radio"
+                    name="Period"
+                  />
+                  <span class="text">ساعتين </span>
+                </label>
+              </div>
+            </div>
+            <!--Search section-->
+            <div class="row">
+              <div class="col-md-12">
+                <p>
+                  <button
+                    style="color: #e9ad28"
+                    class="btn btn-default"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseSearch"
+                    aria-expanded="false"
+                    aria-controls="collapseSearch"
+                  >
+                    <span class="fa fa-search"></span> بحث
+                  </button>
+                  <button
+                    style="color: #e9ad28"
+                    class="btn btn-default"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#bulkNotification"
+                  >
+                    <span class="fa fa-send"></span> ارسال اشعارات جماعية
+                  </button>
+                </p>
+                <!-- collapse for search -->
+                <div class="collapse" id="collapseSearch">
+                  <div style="padding-bottom: 20px; padding-top: 0px">
+                    <div class="search-trainer">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="section-title center-title">
+                            <span>ابحث هنا عن المدرب/ة الاقرب والأنسب لك</span>
+                          </div>
+                        </div>
+                      </div>
+                      <form
+                        onsubmit="CoachSearche(this);return false;"
+                        action="/PaymentCourse/GetCoaches"
+                        method="post"
+                      >
+                        <div class="form-group"></div>
+                        <div class="row">
+                          <div class="col-lg-12 col-md-12 col-sm-12">
+                            <input
+                              placeholder="اسم المدرب/ة"
+                              type="text"
+                              id="filter_CoachName"
+                              name="filter.CoachName"
+                              value=""
+                            />
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="filter.CoachName"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </div>
+
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <select
+                              id="provincesSelectLIist"
+                              name="filter.ProvinceId"
+                            >
+                              <option class="lableFormColor" value="">
+                                الرجاء اختيار المقاطعة
+                              </option>
+                              <option value="1">
+                                &#x627;&#x644;&#x62D;&#x62F;&#x648;&#x62F;
+                                &#x627;&#x644;&#x634;&#x645;&#x627;&#x644;&#x64A;&#x629;
+                              </option>
+                              <option value="2">
+                                &#x627;&#x644;&#x62C;&#x648;&#x641;
+                              </option>
+                              <option value="3">
+                                &#x62A;&#x628;&#x648;&#x643;
+                              </option>
+                              <option value="4">
+                                &#x62D;&#x627;&#x626;&#x644;
+                              </option>
+                              <option value="5">
+                                &#x627;&#x644;&#x642;&#x635;&#x64A;&#x645;
+                              </option>
+                              <option value="6">
+                                &#x627;&#x644;&#x631;&#x64A;&#x627;&#x636;
+                              </option>
+                              <option value="7">
+                                &#x627;&#x644;&#x645;&#x62F;&#x64A;&#x646;&#x629;
+                                &#x627;&#x644;&#x645;&#x646;&#x648;&#x631;&#x629;
+                              </option>
+                              <option value="8">
+                                &#x639;&#x633;&#x64A;&#x631;
+                              </option>
+                              <option value="9">
+                                &#x627;&#x644;&#x628;&#x627;&#x62D;&#x629;
+                              </option>
+                              <option value="10">
+                                &#x62C;&#x627;&#x632;&#x627;&#x646;
+                              </option>
+                              <option value="11">
+                                &#x645;&#x643;&#x629;
+                                &#x627;&#x644;&#x645;&#x643;&#x631;&#x645;&#x629;
+                              </option>
+                              <option value="12">
+                                &#x646;&#x62C;&#x631;&#x627;&#x646;
+                              </option>
+                              <option value="13">
+                                &#x627;&#x644;&#x634;&#x631;&#x642;&#x64A;&#x629;
+                              </option>
+                            </select>
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="filter.ProvinceId"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <select
+                              id="citiesSelectLIist"
+                              disabled
+                              name="filter.CityId"
+                            >
+                              <option class="lableFormColor" value="">
+                                الرجاء اختيار المدينة
+                              </option>
+                            </select>
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="filter.CityId"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <select
+                              id="neighborhoodtsSelectLIist"
+                              disabled
+                              name="filter.NeighborhoodId"
+                            >
+                              <option class="lableFormColor" value="">
+                                الرجاء اختيار الحي
+                              </option>
+                            </select>
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="filter.NeighborhoodId"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-6">
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="filter.Gender"
+                              data-valmsg-replace="true"
+                            ></span>
+                            <select id="filter_Gender" name="filter.Gender">
+                              <option>نوع الجنس</option>
+                              <option>الجميع</option>
+                              <option value="Male">
+                                &#x630;&#x643;&#x631;
+                              </option>
+                              <option value="Female">
+                                &#x623;&#x646;&#x62B;&#x649;
+                              </option>
+                            </select>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-6">
+                            <select
+                              id="distanceInKiloMeters"
+                              data-val="true"
+                              data-val-required="The DistanceInKiloMeters field is required."
+                              name="filter.DistanceInKiloMeters"
+                            >
+                              <option
+                                class="lableFormColor"
+                                value="0"
+                                selected="selected"
+                              >
+                                اختاري دائرة البحث
+                              </option>
+                              <option class="lableFormColor" value="50">
+                                50 كيلو متر
+                              </option>
+                              <option class="lableFormColor" value="100">
+                                100 كيلو متر
+                              </option>
+                              <option class="lableFormColor" value="150">
+                                150 كيلو متر
+                              </option>
+                              <option class="lableFormColor" value="200">
+                                200 كيلو متر
+                              </option>
+                              <option class="lableFormColor" value="250">
+                                250 كيلو متر
+                              </option>
+                            </select>
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="filter.DistanceInKiloMeters"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </div>
+                          <div class="col-lg-12 text-center">
+                            <button
+                              type="submit"
+                              class="primary-btn second-bg pointer"
+                            >
+                              بحث
+                            </button>
+                          </div>
+                        </div>
+                        <input
+                          name="__RequestVerificationToken"
+                          type="hidden"
+                          value="CfDJ8GM5XNSLYWJBmlZ_ScNp6k8boD61q8nWFUSVf1VGR8Tdo2akEGvluVpJNZcxETnfxES4mNsECRkstIr3v9D7DeE84tb4JBpuEnsw_SO11lAdayfH8cemjrZJKJoxz_fevQ5iic_or2ZeqjZgylFUz2dX1q8ni11owo5WLRmH2cQsNSgaAG2VvaBPt7pGrI78uQ"
+                        />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end search section-->
+            <div id="coachesBody">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="team__item">
+                    <div class="team__item__img">
+                      <img
+                        style="height: 50px; width: 50px"
+                        src="./img/coach.jpg"
+                        alt="&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F; &#x627;&#x644;"
+                      />
+                    </div>
+                    <div class="team__item__text">
+                      <h5>
+                        <a
+                          target="_blank"
+                          class="linkColorHover primary-color"
+                          href="/Coaches/Profile/ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          >&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F;
+                          &#x627;&#x644;</a
+                        >
+                      </h5>
+                      <div class="rating my-3">
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>هادية صبورة اوصل المعلومه بشكل سهل ورائع ....</p>
+                      <div class="team__item__social">
+                        <div
+                          id="coachdiv_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          class="team__item__text"
+                          style="display: none"
+                        >
+                          <h5>سيتم الاشعار بعد الدفع</h5>
+                        </div>
+                        <button
+                          id="coach_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          data-popuptitle="الرجاء اختيار اليوم والتوقيت الذي يناسبك للبدأ بالتدريب حيث سيتم الجدولة تلقائياً بالأيام المتاحة بعده"
+                          class="btn btn-primary btn-block myBtn pointer"
+                          onclick='setCoachId("ce124819-095f-4a22-8d1e-91826d59e5d0");getDataPopUp(this, "/PaymentCourse/GetCoachWorkTimes?coachId=ce124819-095f-4a22-8d1e-91826d59e5d0", "popUpContentReplce");'
+                          data-toggle="modal"
+                          data-target="#PopUp"
+                        >
+                          اشعار المدرب&#x629;
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="team__item">
+                    <div class="team__item__img">
+                      <img
+                        style="height: 50px; width: 50px"
+                        src="./img/coach.jpg"
+                        alt="&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F; &#x627;&#x644;"
+                      />
+                    </div>
+                    <div class="team__item__text">
+                      <h5>
+                        <a
+                          target="_blank"
+                          class="linkColorHover primary-color"
+                          href="/Coaches/Profile/ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          >&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F;
+                          &#x627;&#x644;</a
+                        >
+                      </h5>
+                      <div class="rating my-3">
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>هادية صبورة اوصل المعلومه بشكل سهل ورائع ....</p>
+                      <div class="team__item__social">
+                        <div
+                          id="coachdiv_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          class="team__item__text"
+                          style="display: none"
+                        >
+                          <h5>سيتم الاشعار بعد الدفع</h5>
+                        </div>
+                        <button
+                          id="coach_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          data-popuptitle="الرجاء اختيار اليوم والتوقيت الذي يناسبك للبدأ بالتدريب حيث سيتم الجدولة تلقائياً بالأيام المتاحة بعده"
+                          class="btn btn-primary btn-block myBtn pointer"
+                          onclick='setCoachId("ce124819-095f-4a22-8d1e-91826d59e5d0");getDataPopUp(this, "/PaymentCourse/GetCoachWorkTimes?coachId=ce124819-095f-4a22-8d1e-91826d59e5d0", "popUpContentReplce");'
+                          data-toggle="modal"
+                          data-target="#PopUp"
+                        >
+                          اشعار المدرب&#x629;
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="team__item">
+                    <div class="team__item__img">
+                      <img
+                        style="height: 50px; width: 50px"
+                        src="./img/coach.jpg"
+                        alt="&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F; &#x627;&#x644;"
+                      />
+                    </div>
+                    <div class="team__item__text">
+                      <h5>
+                        <a
+                          target="_blank"
+                          class="linkColorHover primary-color"
+                          href="/Coaches/Profile/ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          >&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F;
+                          &#x627;&#x644;</a
+                        >
+                      </h5>
+                      <div class="rating my-3">
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>هادية صبورة اوصل المعلومه بشكل سهل ورائع ....</p>
+                      <div class="team__item__social">
+                        <div
+                          id="coachdiv_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          class="team__item__text"
+                          style="display: none"
+                        >
+                          <h5>سيتم الاشعار بعد الدفع</h5>
+                        </div>
+                        <button
+                          id="coach_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          data-popuptitle="الرجاء اختيار اليوم والتوقيت الذي يناسبك للبدأ بالتدريب حيث سيتم الجدولة تلقائياً بالأيام المتاحة بعده"
+                          class="btn btn-primary btn-block myBtn pointer"
+                          onclick='setCoachId("ce124819-095f-4a22-8d1e-91826d59e5d0");getDataPopUp(this, "/PaymentCourse/GetCoachWorkTimes?coachId=ce124819-095f-4a22-8d1e-91826d59e5d0", "popUpContentReplce");'
+                          data-toggle="modal"
+                          data-target="#PopUp"
+                        >
+                          اشعار المدرب&#x629;
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="team__item">
+                    <div class="team__item__img">
+                      <img
+                        style="height: 50px; width: 50px"
+                        src="./img/coach.jpg"
+                        alt="&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F; &#x627;&#x644;"
+                      />
+                    </div>
+                    <div class="team__item__text">
+                      <h5>
+                        <a
+                          target="_blank"
+                          class="linkColorHover primary-color"
+                          href="/Coaches/Profile/ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          >&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F;
+                          &#x627;&#x644;</a
+                        >
+                      </h5>
+                      <div class="rating my-3">
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>هادية صبورة اوصل المعلومه بشكل سهل ورائع ....</p>
+                      <div class="team__item__social">
+                        <div
+                          id="coachdiv_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          class="team__item__text"
+                          style="display: none"
+                        >
+                          <h5>سيتم الاشعار بعد الدفع</h5>
+                        </div>
+                        <button
+                          id="coach_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          data-popuptitle="الرجاء اختيار اليوم والتوقيت الذي يناسبك للبدأ بالتدريب حيث سيتم الجدولة تلقائياً بالأيام المتاحة بعده"
+                          class="btn btn-primary btn-block myBtn pointer"
+                          onclick='setCoachId("ce124819-095f-4a22-8d1e-91826d59e5d0");getDataPopUp(this, "/PaymentCourse/GetCoachWorkTimes?coachId=ce124819-095f-4a22-8d1e-91826d59e5d0", "popUpContentReplce");'
+                          data-toggle="modal"
+                          data-target="#PopUp"
+                        >
+                          اشعار المدرب&#x629;
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="team__item">
+                    <div class="team__item__img">
+                      <img
+                        style="height: 50px; width: 50px"
+                        src="./img/coach.jpg"
+                        alt="&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F; &#x627;&#x644;"
+                      />
+                    </div>
+                    <div class="team__item__text">
+                      <h5>
+                        <a
+                          target="_blank"
+                          class="linkColorHover primary-color"
+                          href="/Coaches/Profile/ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          >&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F;
+                          &#x627;&#x644;</a
+                        >
+                      </h5>
+                      <div class="rating my-3">
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>هادية صبورة اوصل المعلومه بشكل سهل ورائع ....</p>
+                      <div class="team__item__social">
+                        <div
+                          id="coachdiv_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          class="team__item__text"
+                          style="display: none"
+                        >
+                          <h5>سيتم الاشعار بعد الدفع</h5>
+                        </div>
+                        <button
+                          id="coach_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          data-popuptitle="الرجاء اختيار اليوم والتوقيت الذي يناسبك للبدأ بالتدريب حيث سيتم الجدولة تلقائياً بالأيام المتاحة بعده"
+                          class="btn btn-primary btn-block myBtn pointer"
+                          onclick='setCoachId("ce124819-095f-4a22-8d1e-91826d59e5d0");getDataPopUp(this, "/PaymentCourse/GetCoachWorkTimes?coachId=ce124819-095f-4a22-8d1e-91826d59e5d0", "popUpContentReplce");'
+                          data-toggle="modal"
+                          data-target="#PopUp"
+                        >
+                          اشعار المدرب&#x629;
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="team__item">
+                    <div class="team__item__img">
+                      <img
+                        style="height: 50px; width: 50px"
+                        src="./img/coach.jpg"
+                        alt="&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F; &#x627;&#x644;"
+                      />
+                    </div>
+                    <div class="team__item__text">
+                      <h5>
+                        <a
+                          target="_blank"
+                          class="linkColorHover primary-color"
+                          href="/Coaches/Profile/ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          >&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F;
+                          &#x627;&#x644;</a
+                        >
+                      </h5>
+                      <div class="rating my-3">
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>هادية صبورة اوصل المعلومه بشكل سهل ورائع ....</p>
+                      <div class="team__item__social">
+                        <div
+                          id="coachdiv_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          class="team__item__text"
+                          style="display: none"
+                        >
+                          <h5>سيتم الاشعار بعد الدفع</h5>
+                        </div>
+                        <button
+                          id="coach_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          data-popuptitle="الرجاء اختيار اليوم والتوقيت الذي يناسبك للبدأ بالتدريب حيث سيتم الجدولة تلقائياً بالأيام المتاحة بعده"
+                          class="btn btn-primary btn-block myBtn pointer"
+                          onclick='setCoachId("ce124819-095f-4a22-8d1e-91826d59e5d0");getDataPopUp(this, "/PaymentCourse/GetCoachWorkTimes?coachId=ce124819-095f-4a22-8d1e-91826d59e5d0", "popUpContentReplce");'
+                          data-toggle="modal"
+                          data-target="#PopUp"
+                        >
+                          اشعار المدرب&#x629;
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="team__item">
+                    <div class="team__item__img">
+                      <img
+                        style="height: 50px; width: 50px"
+                        src="./img/coach.jpg"
+                        alt="&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F; &#x627;&#x644;"
+                      />
+                    </div>
+                    <div class="team__item__text">
+                      <h5>
+                        <a
+                          target="_blank"
+                          class="linkColorHover primary-color"
+                          href="/Coaches/Profile/ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          >&#x644;&#x64A;&#x644;&#x649; &#x633;&#x639;&#x62F;
+                          &#x627;&#x644;</a
+                        >
+                      </h5>
+                      <div class="rating my-3">
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i style="color: #f3bd00" class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>هادية صبورة اوصل المعلومه بشكل سهل ورائع ....</p>
+                      <div class="team__item__social">
+                        <div
+                          id="coachdiv_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          class="team__item__text"
+                          style="display: none"
+                        >
+                          <h5>سيتم الاشعار بعد الدفع</h5>
+                        </div>
+                        <button
+                          id="coach_ce124819-095f-4a22-8d1e-91826d59e5d0"
+                          data-popuptitle="الرجاء اختيار اليوم والتوقيت الذي يناسبك للبدأ بالتدريب حيث سيتم الجدولة تلقائياً بالأيام المتاحة بعده"
+                          class="btn btn-primary btn-block myBtn pointer"
+                          onclick='setCoachId("ce124819-095f-4a22-8d1e-91826d59e5d0");getDataPopUp(this, "/PaymentCourse/GetCoachWorkTimes?coachId=ce124819-095f-4a22-8d1e-91826d59e5d0", "popUpContentReplce");'
+                          data-toggle="modal"
+                          data-target="#PopUp"
+                        >
+                          اشعار المدرب&#x629;
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- notes -->
+            <div class="row">
+              <div class="col-md-12">
+                <h2 style="color: #0c2b4b">ملاحظات هامة:</h2>
+                <ul>
+                  <li>
+                    بعد الحجز واتمام الدفع وقبول المدربة سيتم ارسال بريد
+                    الكتروني يحتوي على بيانات المدرب/ة والتاريخ وموقع التدريب
+                  </li>
+                  <li>يمكنك اشعار اكثر من مدرب/ة في نفس الوقت</li>
+                  <li>يرجى الحضور بالاجرائات الاحترازية</li>
+                  <li>
+                    باتمام عملية الدفع فانت توافق على
+                    <a target="_blank" href="/PrivacyPolicy"> سياسة خصوصية</a>
+                    الموقع و
+                    <a target="_blank" href="/TermsOfUse">سياسة استخدام</a>
+                    الموقع
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- ------------- step 2------------------------ -->
+          <!-- buy method -->
+          <div class="Step regester buy-method">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-title center-title">
+                  <span> وسائل الدفع</span>
+                  <h2>الرجاء اختيار وسيلة الدفع التي تناسبك</h2>
+                </div>
+              </div>
+            </div>
+            <!-- btn methods -->
+            <div class="btns">
+              <button class="active Mada" onclick="changeMethod('mada')">
+                <img src="./img/Mada.png" />
+              </button>
+              <button class="Visa" onclick="changeMethod('Visa')">
+                <img src="./img/Visa.png" />
+              </button>
+              <button class="MasterCard" onclick="changeMethod('MasterCard')">
+                <img src="./img/MasterCard.png" />
+              </button>
+              <button class="StcPay" onclick="changeMethod('StcPay')">
+                <img src="./img/StcPay.png" />
+              </button>
+              <button class="Apple_pay" onclick="changeMethod('Apple_pay')">
+                <img src="./img/Apple_pay.png" />
+              </button>
+              <button class="Bank" onclick="changeMethod('Bank')">
+                <img src="./img/Bank-transfer2.png" />
+              </button>
+            </div>
+            <div class="method-forms">
+              <!-- mada -->
+              <div class="active mada">mada form</div>
+              <!-- Visa -->
+              <div class="Visa">Visa form</div>
+              <!-- MasterCard -->
+              <div class="MasterCard">MasterCard form</div>
+              <!-- StcPay -->
+              <div class="StcPay">StcPay form</div>
+              <!-- Apple_pay -->
+              <div class="Apple_pay">Apple_pay form</div>
+              <!-- Bank -->
+              <div class="Bank">Bank form</div>
+            </div>
+          </div>
+          <!-- ------------- step 3------------------------ -->
+          <!-- confirm buy -->
+          <div class="Step time-work">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-title center-title">
+                  <h2>لا يوجد رصيد كافي في المحفظة.</h2>
+                  <h3 class="pt-2">
+                    الرجاء شحن المحفظة ثم العودة لاكمال شراء الدورة
+                  </h3>
+                  <h3 class="pt-2">
+                    <a class="btn btn-outline-primary" href="/payments"
+                      >اضغط هنا للانتقال لصفحة شحن الرصيد</a
+                    >
+                  </h3>
+                  <h3 class="pt-2">الرصيد المطلوب هو <b>1500.00 SAR</b></h3>
+                </div>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-6">
+                <h3 class="text-secondary mb-3">هل لديك كوبون خصم</h3>
+                <form method="get" action="/Pay/Course">
+                  <div class="form-group">
+                    <input
+                      name="coupon"
+                      class="form-control"
+                      placeholder="رجاءً أدخل كود الكوبون هنا"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-secondary">
+                    تأكيد كوبون الخصم
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <hr />
+                <h2 style="color: #0c2b4b">ملاحظات هامة:</h2>
+                <ul>
+                  <li>
+                    بعد الحجز واتمام الدفع وقبول المدربة سيتم ارسال بريد
+                    الكتروني يحتوي على بيانات المدرب/ة والتاريخ وموقع التدريب
+                  </li>
+                  <li>يمكنك اشعار اكثر من مدرب/ة في نفس الوقت</li>
+                  <li>يرجى الحضور بالاجرائات الاحترازية</li>
+                  <li>
+                    باتمام عملية الدفع فانت توافق على
+                    <a target="_blank" href="/PrivacyPolicy"> سياسة خصوصية</a>
+                    الموقع و
+                    <a target="_blank" href="/TermsOfUse">سياسة استخدام</a>
+                    الموقع
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btns mt-5">
+          <button class="btn" id="prev" disabled>Prev</button>
+          <button class="btn" id="next">Next</button>
+        </div>
+      </div>
+    </section>
+    <!-- Team Section End -->
+    <!-- ---------------models -->
+    <div
+      class="modal fade"
+      id="PopUp"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="popUpModalTitle" class="modal-title">
+              الرجاء اختيار اليوم والتوقيت الذي يناسبك
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="popUpContentReplce"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="bulkNotification"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              الرجاء اختيار اليوم والتوقيت الذي يناسبك
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="bulkNotificationContentReplace">
+            <form
+              onsubmit="AJAXSubmit(this, false, false, 2, 'bulkNotificationloading', 'bulkNotificationloading', true);return false;"
+              action="/PaymentCourse/SendBulkNotifications"
+              method="post"
+            >
+              <input type="hidden" name="courseId" id="courseId" value="2" />
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>تاريخ بدء التدريب</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="bulknotificationDateTime"
+                    name="dayNotifications"
+                    required
+                  />
+                </div>
+
+                <div class="col-sm-6">
+                  <label>مدة الدرس</label>
+                  <select
+                    id="durationNotifications"
+                    name="durationNotifications"
+                  >
+                    <option class="lableFormColor" value="1">ساعة</option>
+                    <option class="lableFormColor" value="2">ساعتين</option>
+                  </select>
+                </div>
+                <br />
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <select id="filterGender" name="filterGender">
+                    <option>نوع الجنس</option>
+                    <option>الجميع</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <select
+                    id="distanceInKiloMetersNotifications"
+                    name="distanceInKiloMetersNotifications"
+                  >
+                    <option class="lableFormColor" value="50">
+                      الرجاء اختيار نطاق ارسال الاشعارات (الافتراضى 50 كيلومتر)
+                    </option>
+                    <option class="lableFormColor" value="50">
+                      50 كيلو متر
+                    </option>
+                    <option class="lableFormColor" value="100">
+                      100 كيلو متر
+                    </option>
+                    <option class="lableFormColor" value="150">
+                      150 كيلو متر
+                    </option>
+                    <option class="lableFormColor" value="200">
+                      200 كيلو متر
+                    </option>
+                    <option class="lableFormColor" value="250">
+                      250 كيلو متر
+                    </option>
+                  </select>
+                </div>
+                <div class="col-lg-12 text-center">
+                  <button type="submit" class="primary-btn second-bg pointer">
+                    ارسال الاشعارات
+                  </button>
+                  <div
+                    id="bulkNotificationloading"
+                    style="display: none; margin: 10px"
+                  >
+                    <span class="text-warning" style="font-size: 30px"
+                      >جاري الإرسال...</span
+                    >
+                  </div>
+                </div>
+
+                <div class="mt-2 mb-2 text-info text-center col-md-12">
+                  يتواجد عدد <span id="coachesCount"></span> مدربين فى هذه
+                  النطاق
+                </div>
+
+                <div class="col-lg-12">
+                  <div id="bulkMap" style="height: 400px; width: 100%"></div>
+                </div>
+              </div>
+              <input
+                name="__RequestVerificationToken"
+                type="hidden"
+                value="CfDJ8GM5XNSLYWJBmlZ_ScNp6k8boD61q8nWFUSVf1VGR8Tdo2akEGvluVpJNZcxETnfxES4mNsECRkstIr3v9D7DeE84tb4JBpuEnsw_SO11lAdayfH8cemjrZJKJoxz_fevQ5iic_or2ZeqjZgylFUz2dX1q8ni11owo5WLRmH2cQsNSgaAG2VvaBPt7pGrI78uQ"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------models -->
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-2 col-sm-6">
+            <div class="footer__widget">
+              <h5>روابط مهمة</h5>
+              <ul>
+                <li><a href="./about.html">معلومات عنا</a></li>
+                <li><a href="./PolicyPrivcy.html">سياسة الخصوصية</a></li>
+                <li><a href="./UsePolicy.html">سياسة الاستخدام</a></li>
+                <li><a href="./faq.html">الاسئلة الشائعة</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="footer__widget">
+              <h5>الدورات</h5>
+              <ul>
+                <li><a href="./courses.html">دورة المستوى المبتدئ</a></li>
+                <li><a href="./courses.html">المستوى المتوسط</a></li>
+                <li><a href="./courses.html">المستوى المتقدم</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="footer__widget">
+              <h5>روابط مفيدة</h5>
+              <ul>
+                <li><a href="./index.html">الرئيسية</a></li>
+                <li><a href="./contact.html">تواصل معنا</a></li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-twitter fa-lg"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-instagram fa-lg"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-whatsapp fa-lg"></i>
+                  </a>
+                  <a href="#">
+                    <img
+                      style="height: 20px; width: 50.15px"
+                      src="./img/Maroof.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="footer__about">
+              <div class="footer__logo">
+                <a href="#"><img src="img/logo.png" alt="" /></a>
+              </div>
+              <p>العنوان: المملكة العربية السعودية</p>
+              <ul>
+                <li>رقم الهاتف: 0559870673</li>
+                <li>البريد الالكتروني: contact@idriveout.com</li>
+                <li style="color: #dedede; font-size: 10px">
+                  برمجة
+                  <a
+                    target="_blank"
+                    href="https://seirah.com/yasinsh"
+                    style="color: #fff"
+                  >
+                    <u>ياسين شهوان</u>
+                  </a>
+                  هاتف
+                  <a
+                    style="color: #fff"
+                    title="واتس اب"
+                    href="https://wa.me/970595079412"
+                    target="_blank"
+                  >
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    <u>00970595079412</u>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="footer__copyright__text">
+              <p>
+                حقوق النشر &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                محفوظة لموقع <i class="fa fa-heart" aria-hidden="true"></i>
+                <a href="/">درايف اوت</a>
+              </p>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+      <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+          <input type="text" id="search-input" placeholder="Search here....." />
+        </form>
+      </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const progress = document.getElementById("progress");
+      const prev = document.getElementById("prev");
+      const next = document.getElementById("next");
+      const cricles = document.querySelectorAll(".circle");
+      const content = document.querySelectorAll(".content > div");
+
+      let currentActive = 1;
+
+      next.addEventListener("click", () => {
+        if (currentActive < cricles.length) {
+          currentActive++;
+        }
+        update();
+      });
+
+      prev.addEventListener("click", () => {
+        if (currentActive > 1) {
+          currentActive--;
+        }
+        update();
+      });
+
+      function update() {
+        cricles.forEach((circle, idx) => {
+          if (idx < currentActive) {
+            circle.classList.add("active");
+            for (let i = 0; i < content.length; i++) {
+              content[i].classList.remove("show");
+            }
+            content[Math.max(idx)].classList.add("show");
+          } else {
+            circle.classList.remove("active");
+            content[Math.max(idx)].classList.remove("show");
+          }
+        });
+
+        progress.style.width =
+          ((currentActive - 1) / (cricles.length - 1)) * 100 + "%";
+
+        if (currentActive === 1) {
+          prev.disabled = true;
+        } else if (currentActive === cricles.length) {
+          next.disabled = true;
+        } else {
+          prev.disabled = false;
+          next.disabled = false;
+        }
+      }
+      // -------------------------------------  buy method ------------------------
+      //all Form Methods
+      let allFormMethods = document.querySelectorAll(
+        ".buy-method .method-forms > div"
+      );
+      //all  Methods button
+      let allMethods = document.querySelectorAll(".buy-method .btns button");
+      //remove All Active Form
+      function removeAllActiveForm() {
+        for (let i = 0; i < allFormMethods.length; i++) {
+          allFormMethods[i].classList.remove("active");
+        }
+      }
+      //remove All Active Method
+      function removeAllActiveMethod() {
+        for (let i = 0; i < allMethods.length; i++) {
+          allMethods[i].classList.remove("active");
+        }
+      }
+      //change Method function
+      function changeMethod(method) {
+        removeAllActiveForm();
+        removeAllActiveMethod();
+        document
+          .querySelector(`.buy-method .method-forms > div.${method}`)
+          .classList.add("active");
+        document
+          .querySelector(`.buy-method .btns button.${method}`)
+          .classList.add("active");
+      }
+    </script>
+  </body>
+</html>
