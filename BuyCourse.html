@@ -49,7 +49,7 @@
         <ul>
           <li><a href="./index.html">الرئيسية</a></li>
           <li><a href="./"> </a></li>
-          <li><a href="./courses.html"> الدورات</a></li>
+          <li><a href="./BuyCourse.html"> الدورات</a></li>
           <li><a href="./blog.html">المدربين</a></li>
           <li><a href="./faq.html">الأسئلة الشائعة</a></li>
         </ul>
@@ -81,7 +81,7 @@
               <ul>
                 <li><a href="./index.html">الرئيسية</a></li>
                 <li><a href="./">لوحة التحكم</a></li>
-                <li><a href="./courses.html"> الدورات</a></li>
+                <li><a href="./BuyCourse.html"> الدورات</a></li>
                 <li>
                   <a href="./team.html">المدربين</a>
                 </li>
@@ -128,6 +128,13 @@
           <div class="progress" id="progress"></div>
           <div class="circle active">
             <span class="icon">
+              <i class="fa-solid fa-car"></i>
+            </span>
+
+            <div class="caption">اختيار الدوره</div>
+          </div>
+          <div class="circle">
+            <span class="icon">
               <i class="fa-solid fa-user-secret"></i>
             </span>
 
@@ -135,23 +142,98 @@
           </div>
           <div class="circle">
             <span class="icon">
+              <i class="fa-solid fa-tags"></i>
+            </span>
+
+            <div class="caption">كوبون</div>
+          </div>
+          <div class="circle">
+            <span class="icon">
               <i class="fa-solid fa-money-bill"></i>
             </span>
 
-            <div class="caption">وسيلة الدفع</div>
+            <div class="caption">الدفع</div>
           </div>
           <div class="circle">
             <span class="icon">
               <i class="fa-solid fa-check-double"></i>
             </span>
 
-            <div class="caption">تاكيد الدفع</div>
+            <div class="caption">تهانينا</div>
           </div>
         </div>
         <div class="content steps">
           <!-- ------------- step 1------------------------ -->
+          <!-- select course  -->
+          <div class="Step select-course show">
+            <div class="section-title center-title">
+              <span> الدورات</span>
+              <h2>الرجاء اختيار الدوره التي ترغب بشرائها</h2>
+            </div>
+            <!-- courses -->
+            <div class="courses">
+              <!-- course -->
+              <div
+                class="course active beginner"
+                onclick="SelectCourse('beginner')"
+              >
+                <div class="pricing__item">
+                  <div class="pricing__item__title">
+                    <h5>دورة المستوى المبتدئ</h5>
+                    <h3 class="mt-3">1500.00 <small>sar</small></h3>
+                  </div>
+
+                  <ul>
+                    <li>
+                      تدريب عملي مكثف للمبتدئين من الصفر للمهارة يحتوي على
+                      اساسيات القيادة الامنة وعلى مهارات اختبار رخصة القيادة في
+                      المرور السعودي ملاحظة: يمكن اختيار وقت التدريب (سا#x627;عه
+                      او ساعتين) السعر شامل مركبة التدريب عدد ساعات التدريب: ١٠
+                      ساعات
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- course -->
+              <div class="course mediam" onclick="SelectCourse('mediam')">
+                <div class="pricing__item">
+                  <div class="pricing__item__title">
+                    <h5>المستوى المتوسط</h5>
+                    <h3 class="mt-3">750.00 <small>sar</small></h3>
+                  </div>
+
+                  <ul>
+                    <li>
+                      تدريب عملي للمستوى المتوسط على مهارات اختبار رخصة القيادة
+                      يحتوي على جميع مهارات اختبار رخصة القيادة في المرور
+                      السعودي ملاحظة: يمكن اختيار وقت التدريب (ساعه او ساعتين)
+                      السعر شامل مركبة التدريب عدد ساعات التدريب: ٥ ساعات
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- course -->
+              <div class="course advanced" onclick="SelectCourse('advanced')">
+                <div class="pricing__item">
+                  <div class="pricing__item__title">
+                    <h5>المستوى المتقدم</h5>
+                    <h3 class="mt-3">450.00 <small>sar</small></h3>
+                  </div>
+                  <ul>
+                    <li>
+                      مراجعة عملية على مهارات اختبار رخصة القيادة في المرور
+                      السعودي للمستوى المتقدم ملاحظة: يمكن اختيار وقت التدريب
+                      (ساعه او ساعتين) السعر شامل مركبة التدريب عدد ساعات
+                      التدريب: ٣ ساعات
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ------------- step 2------------------------ -->
           <!-- select trainer -->
-          <div class="Step regester show">
+          <div class="Step regester">
             <div class="row">
               <div class="col-lg-12">
                 <div class="section-title center-title">
@@ -754,35 +836,42 @@
                 </div>
               </div>
             </div>
-            <!-- notes -->
-            <div class="row">
-              <div class="col-md-12">
-                <h2 style="color: #0c2b4b">ملاحظات هامة:</h2>
-                <ul>
-                  <li>
-                    بعد الحجز واتمام الدفع وقبول المدربة سيتم ارسال بريد
-                    الكتروني يحتوي على بيانات المدرب/ة والتاريخ وموقع التدريب
-                  </li>
-                  <li>يمكنك اشعار اكثر من مدرب/ة في نفس الوقت</li>
-                  <li>يرجى الحضور بالاجرائات الاحترازية</li>
-                  <li>
-                    باتمام عملية الدفع فانت توافق على
-                    <a target="_blank" href="/PrivacyPolicy"> سياسة خصوصية</a>
-                    الموقع و
-                    <a target="_blank" href="/TermsOfUse">سياسة استخدام</a>
-                    الموقع
-                  </li>
-                </ul>
+          </div>
+          <!-- ------------- step 3------------------------ -->
+          <!-- copon  -->
+          <div class="Step copon">
+            <div class="section-title center-title">
+              <span> الكوبون</span>
+              <h2>الرصيد المطلوب هو <b>1500.00 SAR</b></h2>
+            </div>
+
+            <div class="row text-center">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-6">
+                <h3 class="text-secondary mb-3">هل لديك كوبون خصم</h3>
+                <form method="get" action="/Pay/Course">
+                  <div class="form-group">
+                    <input
+                      name="coupon"
+                      class="form-control"
+                      placeholder="رجاءً أدخل كود الكوبون هنا"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-secondary">
+                    تأكيد كوبون الخصم
+                  </button>
+                </form>
               </div>
             </div>
           </div>
-          <!-- ------------- step 2------------------------ -->
+          <!-- ------------- step 4------------------------ -->
           <!-- buy method -->
           <div class="Step regester buy-method">
             <div class="row">
               <div class="col-lg-12">
                 <div class="section-title center-title">
-                  <span> وسائل الدفع</span>
+                  <span> الدفع</span>
                   <h2>الرجاء اختيار وسيلة الدفع التي تناسبك</h2>
                 </div>
               </div>
@@ -823,70 +912,41 @@
               <div class="Bank">Bank form</div>
             </div>
           </div>
-          <!-- ------------- step 3------------------------ -->
+          <!-- ------------- step 5------------------------ -->
           <!-- confirm buy -->
-          <div class="Step time-work">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="section-title center-title">
-                  <h2>لا يوجد رصيد كافي في المحفظة.</h2>
-                  <h3 class="pt-2">
-                    الرجاء شحن المحفظة ثم العودة لاكمال شراء الدورة
-                  </h3>
-                  <h3 class="pt-2">
-                    <a class="btn btn-outline-primary" href="/payments"
-                      >اضغط هنا للانتقال لصفحة شحن الرصيد</a
-                    >
-                  </h3>
-                  <h3 class="pt-2">الرصيد المطلوب هو <b>1500.00 SAR</b></h3>
-                </div>
-              </div>
+          <div class="Step time-work text-center">
+            <div class="section-title center-title">
+              <span> تهانينا</span>
+              <h2>مبارك تم شراء الدورة بنجاح</h2>
             </div>
-            <div class="row text-center">
-              <div class="col-lg-3"></div>
-              <div class="col-lg-6">
-                <h3 class="text-secondary mb-3">هل لديك كوبون خصم</h3>
-                <form method="get" action="/Pay/Course">
-                  <div class="form-group">
-                    <input
-                      name="coupon"
-                      class="form-control"
-                      placeholder="رجاءً أدخل كود الكوبون هنا"
-                      required
-                    />
-                  </div>
-                  <button type="submit" class="btn btn-secondary">
-                    تأكيد كوبون الخصم
-                  </button>
-                </form>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <hr />
-                <h2 style="color: #0c2b4b">ملاحظات هامة:</h2>
-                <ul>
-                  <li>
-                    بعد الحجز واتمام الدفع وقبول المدربة سيتم ارسال بريد
-                    الكتروني يحتوي على بيانات المدرب/ة والتاريخ وموقع التدريب
-                  </li>
-                  <li>يمكنك اشعار اكثر من مدرب/ة في نفس الوقت</li>
-                  <li>يرجى الحضور بالاجرائات الاحترازية</li>
-                  <li>
-                    باتمام عملية الدفع فانت توافق على
-                    <a target="_blank" href="/PrivacyPolicy"> سياسة خصوصية</a>
-                    الموقع و
-                    <a target="_blank" href="/TermsOfUse">سياسة استخدام</a>
-                    الموقع
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <a class="btn btn-outline-primary px-5 py-3" href="/"
+              >اضغط هنا للاتنقال للدوره التي تم شرائها</a
+            >
           </div>
         </div>
+        <!-- ------------------------- btns of steps -->
         <div class="btns mt-5">
           <button class="btn" id="prev" disabled>Prev</button>
           <button class="btn" id="next">Next</button>
+        </div>
+        <!-- notes -->
+        <div class="notes-buy">
+          <h2 style="color: #0c2b4b">ملاحظات هامة:</h2>
+          <ul>
+            <li>
+              بعد الحجز واتمام الدفع وقبول المدربة سيتم ارسال بريد الكتروني
+              يحتوي على بيانات المدرب/ة والتاريخ وموقع التدريب
+            </li>
+            <li>يمكنك اشعار اكثر من مدرب/ة في نفس الوقت</li>
+            <li>يرجى الحضور بالاجرائات الاحترازية</li>
+            <li>
+              باتمام عملية الدفع فانت توافق على
+              <a target="_blank" href="/PrivacyPolicy"> سياسة خصوصية</a>
+              الموقع و
+              <a target="_blank" href="/TermsOfUse">سياسة استخدام</a>
+              الموقع
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -1213,6 +1273,24 @@
           prev.disabled = false;
           next.disabled = false;
         }
+      }
+      // -------------------------------------  select course ------------------------
+      //all courses
+      let allcourses = document.querySelectorAll(
+        ".select-course .courses .course"
+      );
+      //remove  Active course from all courses
+      function removeAllActiveCourses() {
+        for (let i = 0; i < allcourses.length; i++) {
+          allcourses[i].classList.remove("active");
+        }
+      }
+      //select active course
+      function SelectCourse(course) {
+        removeAllActiveCourses();
+        document
+          .querySelector(`.select-course .courses .course.${course}`)
+          .classList.add("active");
       }
       // -------------------------------------  buy method ------------------------
       //all Form Methods

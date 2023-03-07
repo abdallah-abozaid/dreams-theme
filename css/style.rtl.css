@@ -363,7 +363,7 @@ a {
   right: -400px;
   top: 0;
   width: 580px;
-  height: 100%;
+  height: 101%;
   background: #f3bd00;
   content: "";
   z-index: -1;
@@ -3218,7 +3218,7 @@ section {
 
 .steps .Step {
   width: 90%;
-  margin: 5rem auto;
+  margin: 5rem auto 2rem;
   display: none;
 }
 .Step {
@@ -3406,4 +3406,57 @@ section {
 }
 .buy-course-page button {
   border-radius: 0.3rem;
+}
+.notes-buy {
+  margin-top: 4rem;
+  margin-right: 2rem;
+}
+.select-course .courses {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+.select-course .courses .course {
+  width: 30%;
+  cursor: pointer;
+}
+.select-course .courses .course .pricing__item {
+  padding: 2rem 1rem 1rem;
+  background-color: #fff;
+  border-radius: 0.6rem;
+  border: 1px solid #ddd;
+}
+.select-course .courses .course.active .pricing__item ul li {
+  color: #ccc;
+}
+.select-course .courses .course.active .pricing__item .pricing__item__title h5 {
+  color: #fff;
+}
+.select-course .courses .course:hover .pricing__item {
+  border: 1px dotted #0c2b4b;
+  transform: scale(1.05);
+}
+.select-course .courses .course.active .pricing__item {
+  background-color: #0c2b4b;
+}
+.select-course .courses .course .pricing__item .pricing__item__title {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+.select-course .courses .course .pricing__item .pricing__item__title h5 {
+  color: #000000;
+}
+.select-course .courses .course .pricing__item .pricing__item__title h3 {
+  color: #f3bd00;
+}
+.select-course .courses .course .pricing__item ul {
+  margin-bottom: 0;
+}
+.select-course .courses .course .pricing__item ul li {
+  color: grey;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 0rem !important;
 }
