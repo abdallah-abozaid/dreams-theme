@@ -77,7 +77,7 @@
                 <li><a href="./index.html">الرئيسية</a></li>
                 <li><a href="./">لوحة التحكم</a></li>
                 <li><a href="./BuyCourse.html"> الدورات</a></li>
-                <li class="active">
+                <li>
                   <a href="./team.html">المدربين</a>
                 </li>
                 <li><a href="./faq.html">الأسئلة الشائعة</a></li>
@@ -107,7 +107,7 @@
           <div class="col-lg-12">
             <div class="breadcrumb__links">
               <a href="./index.html"><i class="fa fa-home"></i> الرئيسية</a>
-              <span>المدربين</span>
+              <span>نتائج البحث</span>
             </div>
           </div>
         </div>
@@ -117,168 +117,19 @@
 
     <!-- Team Section Begin -->
 
-    <section class="team team--instructor spad team-page">
+    <section class="team team--instructor spad">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="section-title text-center">
               <span>فريقنا الرائع</span>
-              <h2>تواصل مع المدرب المناسب</h2>
+              <h2>نتائج البحث</h2>
             </div>
           </div>
         </div>
-        <!-- search btn -->
-        <button
-          style="color: #f3bd00; font-size: 1.1rem; font-weight: 600"
-          class="btn btn-default mb-4"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapseSearch"
-          aria-expanded="false"
-          aria-controls="collapseSearch"
-        >
-          <span class="fa fa-search"></span> بحث
-        </button>
-        <!-- search block elements -->
-        <div class="collapse" id="collapseSearch">
-          <div
-            class="application-form courses--page spad"
-            style="padding-bottom: 20px; padding-top: 0px"
-          >
-            <div class="search-trainer" style="background-color: #eeeeee">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="section-title center-title">
-                    <span>ابحث هنا عن المدرب الاقرب والأنسب لك</span>
-                  </div>
-                </div>
-              </div>
-              <form method="get" action="/Coaches/Filter">
-                <div class="form-group"></div>
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <input
-                      placeholder="اسم المدرب/ة"
-                      type="text"
-                      id="filter_CoachName"
-                      name="filter.CoachName"
-                      value=""
-                    />
-                    <span
-                      class="text-danger field-validation-valid"
-                      data-valmsg-for="filter.CoachName"
-                      data-valmsg-replace="true"
-                    ></span>
-                  </div>
 
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <select id="provincesSelectLIist" name="filter.ProvinceId">
-                      <option class="lableFormColor" value="">
-                        الرجاء اختيار المقاطعة
-                      </option>
-                      <option value="1">المقاطعة</option>
-                      <option value="2">المقاطعة</option>
-                      <option value="3">المقاطعة</option>
-                      <option value="4">المقاطعة</option>
-                      <option value="5">المقاطعة</option>
-                      <option value="6">المقاطعة</option>
-                      <option value="7">المقاطعة</option>
-                      <option value="8">المقاطعة</option>
-                      <option value="9">المقاطعة</option>
-                      <option value="10">المقاطعة</option>
-                      <option value="11">المقاطعة</option>
-                      <option value="12">المقاطعة</option>
-                      <option value="13">المقاطعة</option>
-                    </select>
-                    <span
-                      class="text-danger field-validation-valid"
-                      data-valmsg-for="filter.ProvinceId"
-                      data-valmsg-replace="true"
-                    ></span>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <select
-                      id="citiesSelectLIist"
-                      disabled
-                      name="filter.CityId"
-                    >
-                      <option class="lableFormColor" value="">
-                        الرجاء اختيار المدينة
-                      </option>
-                    </select>
-                    <span
-                      class="text-danger field-validation-valid"
-                      data-valmsg-for="filter.CityId"
-                      data-valmsg-replace="true"
-                    ></span>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <select
-                      id="neighborhoodtsSelectLIist"
-                      disabled
-                      name="filter.NeighborhoodId"
-                    >
-                      <option class="lableFormColor" value="">
-                        الرجاء اختيار الحي
-                      </option>
-                    </select>
-                    <span
-                      class="text-danger field-validation-valid"
-                      data-valmsg-for="filter.NeighborhoodId"
-                      data-valmsg-replace="true"
-                    ></span>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <select
-                      id="distanceInKiloMeters"
-                      data-val="true"
-                      data-val-required="The DistanceInKiloMeters field is required."
-                      name="filter.DistanceInKiloMeters"
-                    >
-                      <option
-                        class="lableFormColor"
-                        value="0"
-                        selected="selected"
-                      >
-                        الرجاء اختيار دائرة البحث
-                      </option>
-                      <option class="lableFormColor" value="50">
-                        50 كيلو متر
-                      </option>
-                      <option class="lableFormColor" value="100">
-                        100 كيلو متر
-                      </option>
-                      <option class="lableFormColor" value="150">
-                        150 كيلو متر
-                      </option>
-                      <option class="lableFormColor" value="200">
-                        200 كيلو متر
-                      </option>
-                      <option class="lableFormColor" value="250">
-                        250 كيلو متر
-                      </option>
-                    </select>
-                    <span
-                      class="text-danger field-validation-valid"
-                      data-valmsg-for="filter.DistanceInKiloMeters"
-                      data-valmsg-replace="true"
-                    ></span>
-                  </div>
-                  <div class="col-lg-12 text-center">
-                    <button
-                      type="submit"
-                      class="btn primary-btn second-bg pointer"
-                    >
-                      بحث
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
         <!-- all trainer -->
-        <div class="row">
+        <div class="row team-page">
           <div class="col-lg-6">
             <a class="team__item d-block" href="./trainer.html">
               <div class="team__item__img">
@@ -549,37 +400,6 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-6">
-            <a class="team__item d-block" href="./trainer.html">
-              <div class="team__item__img">
-                <img src="img/team/team-1.png" alt="" />
-              </div>
-              <div class="team__item__text">
-                <h5>
-                  <p
-                    style="
-                      color: #000;
-                      font-size: 1.15rem;
-                      margin-bottom: 0;
-                      font-weight: 600;
-                    "
-                  >
-                    امل ابوراية
-                  </p>
-                </h5>
-                <span>مدرب</span>
-                <p>هادية صبورة حبوووبه اوصل المعلومه بشكل سهل ورائع ....</p>
-                <div class="rating">
-                  <i style="color: #f3bd00" class="fa fa-star"></i>
-                  <i style="color: #f3bd00" class="fa fa-star"></i>
-                  <i style="color: #f3bd00" class="fa fa-star"></i>
-                  <i style="color: #f3bd00" class="fa fa-star"></i>
-                  <i style="color: grey" class="fa fa-star"></i>
-                </div>
-              </div>
-            </a>
-          </div>
-
           <div class="col-lg-12 mt-5">
             <div class="pagination__option">
               <a href="#">1</a>

@@ -1005,9 +1005,14 @@ a {
   border: 1px solid #e1e1e1;
   overflow: hidden;
   padding: 40px;
+  border-radius: 0.5rem;
   margin-bottom: 30px;
+  transition: all 0.3s ease-out;
 }
-
+.team-page .team__item:hover {
+  transform: scale(1.05);
+  background-color: #fafafa;
+}
 .team__item__img {
   float: right;
   margin-left: 30px;
@@ -3120,7 +3125,8 @@ section {
 }
 /* --------------state-site */
 .state-site {
-  margin: 8rem 0 0;
+  margin: 6rem 0 0;
+  padding-bottom: 25px;
 }
 .state-site .cards {
   display: flex;
@@ -3381,6 +3387,15 @@ section {
   border: 1px #0c2b4b1c solid;
   border-radius: 14px;
   padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.search-trainer input,
+.search-trainer select {
+  background-color: #fff !important;
+  border-radius: 0.3rem;
+}
+.search-trainer:hover {
+  background-color: #e7e7e7 !important;
 }
 .buy-course-page form input,
 .modal form input {
